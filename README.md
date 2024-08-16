@@ -85,12 +85,10 @@ https://doc.rust-lang.org/std/fmt/index.html
     let mut numbers = vec![0; n];
 ```
 ※配列を[x; N]で初期化する場合、要素数Nはコンパイル時に定まっている必要がある。
-そのため、下記のように標準入力から受け取った値を個数として設定し、その要素数の配列を生成することはできない。
+そのため、下記のように標準入力から受け取った値を用いて、その要素数の配列を生成することはできない。
 ```rust
     input! {
         n: usize,
-        x: usize,
-        y: usize,
     }
 
     let mut numbers : [0; n];
@@ -100,8 +98,6 @@ https://doc.rust-lang.org/std/fmt/index.html
 fn main() {
     input! {
         n: usize,
-        x: usize,
-        y: usize,
     }
     // 10000は、問題に合わせて任意の数を設定する
     let mut numbers: [usize; 10000] = [0; 10000];
