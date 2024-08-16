@@ -1,7 +1,6 @@
 # Input
 アルゴ式では、Proconioマクロが使えないため、以下の記事から拝借したマクロを使用することで同じような使用感で問題を解く
 https://qiita.com/tanakh/items/0ba42c7ca36cd29d0ac8
-
 ```rust
 use std::io::Read;
 
@@ -68,9 +67,14 @@ fn main() {
     println!("{} {} {}", n, x, y);
 }
 ```
-
 Rust公式 println!
 https://doc.rust-lang.org/std/fmt/index.html
+
+※Atcoderでは proconioマクロが使用できるため、
+```rust
+use proconio::input;
+```
+して入力受け取りを行う。
 
 # 配列とベクタ
 
