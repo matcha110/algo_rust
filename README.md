@@ -62,9 +62,11 @@ fn main() {
         n: usize,
         x: usize,
         y: usize,
+        s: [String; n]
     }
 
     println!("{} {} {}", n, x, y);
+    println!("{:?}", s);
 }
 ```
 Rust公式 println!
