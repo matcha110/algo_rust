@@ -111,6 +111,20 @@ fn main() {
 
 ```
 
+文字列をChar型としてリスト化
+```rust
+fn main() {
+    input! {
+        n: usize,
+        s: [String; n]
+    }
+
+    for i in 0..n {
+        // 文字列をchar型にしてリストに入れる
+        cs[i] = s[i].chars().collect();
+    }
+```
+
 型
 型|説明
 -|-
